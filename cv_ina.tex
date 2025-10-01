@@ -1,0 +1,213 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+% The MIT License (MIT)
+%
+% Copyright (c) 2021 Jitin Nair
+%
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the "Software"), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+% THE SOFTWARE.
+%
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+% FONT & PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\usepackage{supertabular}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+\usepackage{fontawesome5}
+
+% job listing environments
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+%----------------------------------------------------------------------------------------
+% BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+% TITLE
+%----------------------------------------------------------------------------------------
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Nazura Wirayuda Tama} \\[7.5pt]
+\href{https://github.com/nazuratama}{\raisebox{-0.05\height}\faGithub\ nazuratama} \ $|$ \ 
+\href{https://linkedin.com/in/nazuratama}{\raisebox{-0.05\height}\faLinkedin\ nazuratama} \ $|$ \ 
+\href{mailto:nazura2003@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ nazura2003@gmail.com} \ $|$ \ 
+\href{tel:+6281330300731}{\raisebox{-0.05\height}\faMobile \ +62-813-3030-0731} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% RINGKASAN
+%----------------------------------------------------------------------------------------
+\section{Ringkasan}
+Saya adalah lulusan Teknik Informatika Universitas Brawijaya yang berfokus pada Machine Learning, khususnya Computer Vision serta memiliki kemahiran di Natural Language Processing. Memiliki pengalaman lebih dari dua tahun dalam merancang, membangun, dan menyempurnakan model ML yang andal. Termotivasi untuk memanfaatkan dasar pemrograman, analisis data, dan arsitektur deep learning guna mengembangkan solusi AI yang inovatif. Siap berkontribusi dalam peran yang menantang untuk membangun sistem cerdas yang berdampak.
+
+%----------------------------------------------------------------------------------------
+% PENGALAMAN
+%----------------------------------------------------------------------------------------
+\section{Pengalaman}
+
+\begin{joblong}{FILKOM UB - Asisten Peneliti}{\textbf{Jun 2023 -- Agu 2025}}
+\item Merancang dan mengembangkan model computer vision berbasis deep learning (YOLO, DETR) untuk deteksi dan ekstraksi karakter pada naskah kuno \textit{Serat Napoleon Lontar}.
+\item Membangun pipeline segmentasi citra fundus okular dan klasifikasi multi-kelas penyakit retina menggunakan arsitektur U\,-Net ResNet.
+\item Melakukan riset penyakit retina (DM Only, DM + CKD III, \& DM + CKD V) yang diklasifikasikan dengan machine learning, dengan rencana penerapan model pada perangkat IoT.
+\item Berhasil memperoleh pendanaan riset RKI-21 PTNBH dan DRPM dari Universitas Brawijaya untuk topik computer vision dan analisis citra medis.
+\end{joblong}
+
+\begin{joblong}{Intelligent Systems Laboratory - Anggota Peneliti}{\textbf{Des 2023 -- Agu 2025}}
+\item Meneliti sistem bantuan navigasi cerdas menggunakan model computer vision dan Large Language Models.
+\item Klasifikasi citra AI dengan teknik pengayaan ekstraksi fitur, kemudian diklasifikasikan menggunakan kombinasi ResNet, ConvNeXt, dan DINOv2 sebagai classifier.
+\end{joblong}
+
+\begin{joblong}{Bangkit Academy - Machine Learning Cohort}{\textbf{Feb 2024 -- Jul 2024}}
+\item Lulus dengan nilai rata-rata 95{,}75.
+\item Mengembangkan aplikasi mobile identifikasi penyakit tanaman: mencakup akuisisi data, transformasi, EDA citra, dan pelatihan model klasifikasi TensorFlow.
+\end{joblong}
+
+\begin{joblong}{FILKOM UB - Asisten Praktikum Pengantar Machine Learning}{\textbf{Feb 2024 -- Jun 2024}}
+\item Mendampingi 40 mahasiswa memahami konsep dasar machine learning dan implementasi praktis pada mata kuliah Pengantar Machine Learning.
+\item Memberikan bimbingan saat sesi laboratorium dan membantu penyelesaian kendala pada tugas pemrograman.
+\end{joblong}
+
+\begin{joblong}{Panitia Pengawas Pemilu - Koordinator }{\textbf{Sep 2023 -- Des 2023}}
+\item Memimpin pengawasan pemilu di tingkat fakultas Universitas Brawijaya: mengatur organisasi dan manajemen, serta mengoordinasikan beberapa TPS dan tim relawan.
+\item Mengoordinasikan kegiatan pengawasan dan memastikan kepatuhan terhadap prosedur serta regulasi pemilu, termasuk pengelolaan administrasi dan pelaporan.
+\end{joblong}
+
+\begin{joblong}{LPM DISPLAY - Hubungan Masyarakat}{\textbf{Feb 2023 -- Des 2023}}
+\item Aktif dalam komunitas jurnalistik: menulis artikel dan meliput kegiatan kampus secara berkala.
+\item Berpartisipasi dalam pembuatan konten, peliputan berita, dan aktivitas editorial di universitas.
+\end{joblong}
+
+%----------------------------------------------------------------------------------------
+% PENDIDIKAN
+%----------------------------------------------------------------------------------------
+\section{Pendidikan}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2021 -- 2025 & Sarjana (S1) \textbf{Universitas Brawijaya} \hfill (IPK: 3.46/4.0) \\ 
+2019 -- 2021 & \textbf{SMA Negeri 1 Tuban} \\
+2018 -- 2019 & \textbf{SMA Negeri 1 Tambakboyo} \\
+2015 -- 2018 & \textbf{SMP Negeri 6 Tuban} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% PRESTASI
+%----------------------------------------------------------------------------------------
+\section{Prestasi}
+\hypersetup{hidelinks}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\href{https://drive.google.com/file/d/1HlHqBQiY5aCp8P5qI-VP7Qo11Sv0Op5J/view?usp=drive_link}{Bronze Medal BirdCLEF+ 2025}} & \hfill \textbf{Cornell University Lab of Ornithology} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Meraih medali perunggu pada kompetisi identifikasi spesies berbasis audio (burung, amfibi, mamalia, dan serangga) dari Middle Magdalena Valley, Kolombia, menggunakan teknik deep learning.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\href{https://drive.google.com/file/d/1IgvW4PnoxvhXLq-yllY7VhY5LpvlcQp-/view?usp=drive_link}{Finalist GEMASTIK 2024}} & \hfill \textbf{Kemendikbudristek} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Salah satu dari 20 tim finalis cabang Data Mining di GEMASTIK 2024: menyusun laporan teknis pada babak penyisihan dan membangun model machine learning pada babak final.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\href{https://drive.google.com/file/d/1C0Lqpp6gYZGfwgYtDjUa75PJxaKPobHK/view?usp=drive_link}{Finalist Data Slayer 2.0}} & \hfill \textbf{Universitas Telkom Purwokerto} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Finalis kompetisi dengan pengembangan model \textit{Human Fall Detection Classification for Safety Insight} menggunakan arsitektur deep learning YOLOv11.}  \\
+\end{tabularx}
+
+\hypersetup{linkcolor=blue, urlcolor=blue}
+
+%----------------------------------------------------------------------------------------
+% SERTIFIKASI
+%----------------------------------------------------------------------------------------
+\section{Sertifikasi}
+\hypersetup{hidelinks}
+\begin{itemize}[nosep, leftmargin=1em, itemsep=3pt, label=--]
+  \item \href{https://www.coursera.org/account/accomplishments/specialization/XWCXBMCME5CP}{Google IT Automation with Python Specialization} \hfill Google
+  \item \href{https://www.coursera.org/account/accomplishments/specialization/ARJMR4LS8LEX}{Google Data Analytics Specialization} \hfill Google
+  \item \href{https://www.coursera.org/account/accomplishments/specialization/V5EDYT656QMY}{Mathematics for Machine Learning and Data Science Specialization} \hfill DeepLearning.AI
+  \item \href{https://www.coursera.org/account/accomplishments/specialization/VBCR7M7P5TKS}{DeepLearning.AI TensorFlow Developer Specialization} \hfill DeepLearning.AI
+  \item \href{https://www.coursera.org/account/accomplishments/specialization/U84SJDPELJNN}{TensorFlow: Data and Deployment Specialization} \hfill DeepLearning.AI
+  \item \href{https://www.coursera.org/account/accomplishments/specialization/ZPBD6NA8587G}{TensorFlow: Advanced Techniques Specialization} \hfill DeepLearning.AI
+  \item \href{https://www.coursera.org/account/accomplishments/specialization/CGYD8LFTMX5Y}{Natural Language Processing Specialization} \hfill DeepLearning.AI
+  \item \href{https://www.coursera.org/account/accomplishments/specialization/FQ5Y5AMR732R}{Machine Learning Specialization} \hfill DeepLearning.AI \& Stanford University
+\end{itemize}
+\hypersetup{linkcolor=blue, urlcolor=blue}
+
+%----------------------------------------------------------------------------------------
+% PUBLIKASI
+%----------------------------------------------------------------------------------------
+\section{Publikasi}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{SIET 2024 - Accepted Paper} & \hfill \textbf{Sustainable Information Engineering and Technology} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Leveraging Stacked Vessel Segment and Channels of Fundus Image for Eye Disease Detection Using Hybrid U-Net-Residual Convolutional. \textit{Proceedings of SIET 2024}.}  \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% KETERAMPILAN
+%----------------------------------------------------------------------------------------
+\section{Keterampilan}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Bahasa Pemrograman & \normalsize{Python, C++, Java, SQL}\\
+Machine Learning \& AI & \normalsize{PyTorch, TensorFlow, Keras, Scikit-Learn, Hugging Face, Computer Vision, Natural Language Processing, Time Series Forecasting}\\
+Data \& Analitik & \normalsize{Pembersihan Data, Analisis Statistik, Visualisasi Data}\\
+Alat \& Teknologi & \normalsize{Google Cloud Platform (GCP), Git, Linux, Figma, Microsoft Office}\\
+Soft Skills (\textit{Soft Skills}) & \normalsize{Manajemen Proyek, Manajemen Waktu, Kerja Tim, Adaptabilitas, Konsistensi, Kepemimpinan}\\
+Minat & \normalsize{Artificial Intelligence, Penulisan Ilmiah, Touring, Pertanian, Sastra}\\
+\end{tabularx}
+
+\vfill
+\center{\footnotesize Terakhir diperbarui: \today}
+
+\end{document}

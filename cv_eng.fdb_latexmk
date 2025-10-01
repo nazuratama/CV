@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber cv_eng"] 1759319540.01827 "cv_eng.bcf" "cv_eng.bbl" "cv_eng" 1759319543.08161 2
-  "citations.bib" 1759319490.88793 744 c3bb9307a47490486f1d4d80351a3d0c ""
-  "cv_eng.bcf" 1759319543.00738 108050 16b5e7ff7c630c1f9de875c265571c22 "pdflatex"
+["biber cv_eng"] 1759319581.43555 "cv_eng.bcf" "cv_eng.bbl" "cv_eng" 1759319687.75956 2
+  "citations.bib" 1759319580.09023 744 c3bb9307a47490486f1d4d80351a3d0c ""
+  "cv_eng.bcf" 1759319687.68451 108050 16b5e7ff7c630c1f9de875c265571c22 "pdflatex"
   (generated)
   "cv_eng.bbl"
   "cv_eng.blg"
   (rewritten before read)
-["pdflatex"] 1759319542.13053 "/home/tama/Documents/ZURA/CV/CV/cv_eng.tex" "cv_eng.pdf" "cv_eng" 1759319543.08202 0
-  "/home/tama/Documents/ZURA/CV/CV/cv_eng.tex" 1759316670.80832 14393 8d1f4eec6aa86e5e4425769b5cd766b0 ""
+["pdflatex"] 1759319686.80812 "/home/tama/Documents/ZURA/CV/CV/cv_eng.tex" "cv_eng.pdf" "cv_eng" 1759319687.75993 0
+  "/home/tama/Documents/ZURA/CV/CV/cv_eng.tex" 1759319684.54634 14393 8d1f4eec6aa86e5e4425769b5cd766b0 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1755987285 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1755987285 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1755987285 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
@@ -117,11 +117,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1755987285 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1756050910 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1756050898 2008244 8d39c85a003d4ca2663f5f47c33d37a8 ""
-  "cv_eng.aux" 1759319543.00538 1004 700e2556e255987d8e056940af73a899 "pdflatex"
+  "cv_eng.aux" 1759319687.68251 1004 700e2556e255987d8e056940af73a899 "pdflatex"
   "cv_eng.bbl" 0 -1 0 "biber cv_eng"
-  "cv_eng.out" 1759319543.00638 651 ebef453d60df16489ad6465c5b4b6ea6 "pdflatex"
-  "cv_eng.run.xml" 1759319543.00907 2324 a595afce0a806913adaa3f7cf737e5e5 "pdflatex"
-  "cv_eng.tex" 1759316670.80832 14393 8d1f4eec6aa86e5e4425769b5cd766b0 ""
+  "cv_eng.out" 1759319687.68351 651 ebef453d60df16489ad6465c5b4b6ea6 "pdflatex"
+  "cv_eng.run.xml" 1759319687.68659 2324 a595afce0a806913adaa3f7cf737e5e5 "pdflatex"
+  "cv_eng.tex" 1759319684.54634 14393 8d1f4eec6aa86e5e4425769b5cd766b0 ""
   (generated)
   "cv_eng.aux"
   "cv_eng.bcf"
