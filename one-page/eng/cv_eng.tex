@@ -1,0 +1,132 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{url}
+\usepackage{parskip}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[scale=0.85]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\usepackage{supertabular}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\titleformat{\section}{\large\bfseries\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+\usepackage{fontawesome5}
+
+% ===== bullet: bulat di semua itemize yg kita atur labelnya =====
+% (opsional) set default bullet global:
+% \renewcommand\labelitemi{$\bullet$}
+
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill & #2 \\[2pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill & #2 \\[2pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt, label=\textbullet]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Large\textbf{Nazura Wirayuda Tama} \\[6pt]
+\small
+\href{https://github.com/nazuratama}{\raisebox{-0.05\height}\faGithub\ nazuratama} \ $|$ \ 
+\href{https://linkedin.com/in/nazuratama}{\raisebox{-0.05\height}\faLinkedin\ nazuratama} \ $|$ \ 
+\href{mailto:nazura2003@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ nazura2003@gmail.com} \ $|$ \ 
+\href{tel:+6281330300731}{\raisebox{-0.05\height}\faMobile \ +62-813-3030-0731}
+\end{tabularx}
+
+\vspace{6pt}
+
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Universitas Brawijaya}, Malang, Indonesia & \hfill 2021 - 2025 \\ 
+Bachelor of Science in Informatics Engineering & \hfill GPA: 3.46/4.0 \\
+\end{tabularx}
+
+\section{Research Experience}
+
+\begin{joblong}{Research Assistant, Faculty of Computer Science, Universitas Brawijaya}{Jun 2023 - Aug 2025}
+\item Developed deep learning models for character detection and extraction in Serat Napoleon Lontar manuscripts using YOLO architecture and GAN methodology to improve image quality
+\item Built end-to-end pipeline for fundus image segmentation and multi-class retinal disease classification utilizing U-Net and ResNet architectures
+\item Conducted research on retinal disease classification (DM, DM+CKD III, DM+CKD V) with potential IoT applications
+\item Secured RKI-21 PTNBH and DRPM research funding for computer vision and medical imaging projects
+\end{joblong}
+
+\begin{joblong}{Researcher, Intelligent Systems Laboratory}{Dec 2023 - Aug 2025}
+\item Developed intelligent navigation assistance systems integrating computer vision and Large Language Models
+\item Classified AI-generated images using ensemble deep learning approach (ResNet, ConvNeXt, DINOv2) with enhanced feature extraction techniques
+\end{joblong}
+
+\section{Teaching Experience}
+
+\begin{joblong}{Teaching Assistant, Faculty of Computer Science, Universitas Brawijaya}{Feb - Jun 2024}
+\item Assisted 40 students in understanding machine learning fundamentals and practical implementation for Introduction to Machine Learning course
+\item Provided guidance during laboratory sessions and supported students with programming assignments
+\end{joblong}
+
+\section{Service Experience}
+\begin{tabularx}{\linewidth}{@{}l X r@{}}
+\textbf{Coordinator} & Election Supervisory Committee, BEM FILKOM & Sep - Dec 2023 \\
+\textbf{Public Relations Officer} & DISPLAY Student Press Institution & Feb - Dec 2023 \\
+\end{tabularx}
+
+\section{Honors and Awards}
+\begin{tabularx}{\linewidth}{@{}l X r@{}}
+2025 & \textbf{Bronze Medal}, BirdCLEF+ 2025 & Cornell Lab of Ornithology \\
+2025 & \textbf{Finalist}, Data Slayer 2.0 & Telkom University Purwokerto \\
+2024 & \textbf{Finalist}, GEMASTIK XVII Data Mining & Ministry of Education, Culture, Research \& Technology \\
+2024 & \textbf{Graduate}, Bangkit Academy ML Cohort & Average Score: 95.75/100 \\
+\end{tabularx}
+
+\section{Publications}
+\begin{tabularx}{\linewidth}{@{}X@{}}
+Leveraging Stacked Vessel Segment and Channels of Fundus Image for Eye Disease Detection Using Hybrid U-Net-Residual Convolutional. \textit{Proceedings of SIET 2024}. \\
+\end{tabularx}
+
+\section{Professional Certifications}
+\begin{itemize}[nosep, leftmargin=1em, itemsep=2pt, label=\textbullet]
+\item Google IT Automation with Python Specialization \hfill Google
+\item Google Data Analytics Specialization \hfill Google
+\item TensorFlow Developer Specialization \hfill DeepLearning.AI
+\item Natural Language Processing Specialization \hfill DeepLearning.AI
+\item Machine Learning Specialization \hfill DeepLearning.AI \& Stanford University
+\end{itemize}
+
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Programming Languages} & Python, C++, Java, SQL, Bash \\
+\textbf{ML/AI Frameworks} & PyTorch, TensorFlow, Keras, Scikit-Learn, Hugging Face, LangChain \\
+\textbf{Specializations} & Computer Vision, Natural Language Processing, Time Series Forecasting \\
+\textbf{Tools \& Technologies} & Google Cloud Platform, Git, Linux, Power BI, Microsoft Office Suite, Figma \\
+\end{tabularx}
+
+\end{document}
