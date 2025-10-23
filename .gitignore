@@ -14,8 +14,3 @@
 *.snm
 *.vrb
 *.bbl
-
-citations.bib
-CNAME
-index.html
-Makefile
